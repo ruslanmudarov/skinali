@@ -1,0 +1,26 @@
+*
+  outline: none
+
+body
+  +light
+  c$text-color
+
+// Настройки кнопки
+.button
+  border: none
+  text-transform: uppercase
+  padding: 25px 45px
+  font-size: 15px
+  +bold
+  background-color: $primary
+  color: #fff
+
+// Настройки прозрачной кнопки
+.button
+  &-o
+    border: 2px solid $primary
+    padding: 17px 22px
+    background-color: transparent
+    text-transform: uppercase
+    +bold
+    color: $primary
