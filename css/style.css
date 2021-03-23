@@ -2,6 +2,12 @@
 
 .container { max-width: 1170px; margin: auto; }
 
+@media (max-width: 1199px) { .container { max-width: 960px; } }
+
+@media (max-width: 991px) { .container { max-width: 750px; } }
+
+@media (max-width: 767px) { .container { max-width: 100%; padding: 0 20px; } }
+
 @font-face { font-family: 'Proxima Nova Light'; src: url("../fonts/"); src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'Proxima Nova Semibold'; src: url("../fonts/ProximaNova-Semibold.eot"); src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -14,9 +20,11 @@ body { font-family: 'Proxima Nova Light', sans-serif; }
 
 .button-o { border: 2px solid #507fe1; padding: 17px 22px; background-color: transparent; text-transform: uppercase; font-family: 'Proxima Nova Semibold', sans-serif; color: #507fe1; }
 
+@media (max-width: 576px) { .button-o { font-size: 11px; padding: 12px 22px; } }
+
 .navbar { position: fixed; left: 0; top: 0; width: 100%; background-color: #fff; z-index: 99; }
 
-.navbar-wrap { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-height: 80px; }
+.navbar-wrap { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .navbar__mobile, .navbar__landline { text-align: right; }
 
@@ -24,7 +32,7 @@ body { font-family: 'Proxima Nova Light', sans-serif; }
 
 .navbar__small-text { display: block; font-size: 14px; color: #6b6b6b; text-decoration: none; }
 
-.menu { position: fixed; top: 80px; left: 0; z-index: 0; width: 100%; padding: 16px 0; background-color: #507fe1; -webkit-transition: 0.2s; transition: 0.2s; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+.menu { position: fixed; top: 80px; left: 0; z-index: 0; width: 100%; padding: 16px 0; background-color: #507fe1; -webkit-transition: 0.2s; transition: 0.2s; -webkit-transform: translateY(-200%); transform: translateY(-200%); }
 
 .menu_active { -webkit-transform: translateY(0); transform: translateY(0); }
 
@@ -40,9 +48,19 @@ body { font-family: 'Proxima Nova Light', sans-serif; }
 
 .logo__descr { display: block; font-size: 14px; color: #6b6b6b; }
 
+@media (max-width: 991px) { .navbar__mobile, .navbar__landline { display: none; } }
+
+@media (max-width: 576px) { .logo { display: none; }
+  .menu { top: 60px; height: 50%; }
+  .menu-button { height: 60px; }
+  .menu__nav { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .menu__link { margin-bottom: 20px; } }
+
 .hero { background: #f1f1f1 url(../img/hero/hero-bg.jpg) no-repeat center top 80px; background-size: contain; padding-top: 180px; padding-bottom: 270px; }
 
 .hero__title { font-size: 30px; font-family: 'Proxima Nova Light', sans-serif; margin-bottom: 30px; }
 
 .hero__subtitle { display: block; margin-bottom: 67px; font-size: 30px; font-family: 'Proxima Nova Semibold', sans-serif; }
+
+@media (max-width: 991px) { .hero { background-size: cover; background-position: top left 30%; } }
 /*# sourceMappingURL=style.css.map */
