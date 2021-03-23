@@ -5,6 +5,13 @@ body
   +light
   c$text-color
 
+// Настройки input
+.input
+  width: 100%
+  height: 80px
+  padding-left: 30px
+  border: 1px solid #dddddd
+
 // Настройки кнопки
 .button
   border: none
@@ -24,9 +31,42 @@ body
     text-transform: uppercase
     +bold
     color: $primary
+// Настройка чекбоксов
+.checkbox
+  display: none
+  &:checked + label::before
+    background: #4d93ff url(../img/checked-icon.svg) center no-repeat
+  &__label
+    display: flex
+    align-items: center
+    margin-right: 42px
+    cursor: pointer
+    &::before
+      content: ''
+      width: 30px
+      height: 30px
+      border: 1px solid #dddddd
+      margin-right: 19px
 
+// Вторичный фоновый цвет
+.bg-secondary
+  background-color: $bg-secondary
+@media  ( max-width: 991px )
+  .checkbox
+    &__label
+      margin-right: 10px
+      &::before
+        margin-right: 5px
+  .button
+    padding: 15px 30px
+  .form
+    &__button
+      padding: 15px 30px
+      height: 60px !important
 @media  ( max-width: 576px )
   .button
     &-o
       font-size: 11px
       padding: 12px 22px
+  .input
+    height: 60px
