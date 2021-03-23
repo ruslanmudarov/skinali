@@ -6,7 +6,7 @@
 
 @media (max-width: 991px) { .container { max-width: 750px; } }
 
-@media (max-width: 767px) { .container { max-width: 100%; padding: 0 20px; } }
+@media (max-width: 768px) { .container { max-width: 100%; padding: 0 20px; } }
 
 @font-face { font-family: 'Proxima Nova Light'; src: url("../fonts/"); src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
