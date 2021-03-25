@@ -61,6 +61,8 @@ button:hover { cursor: pointer; }
   .section-title { font-size: 22px; font-family: 'Proxima Nova Semibold', sans-serif; text-align: center; text-transform: uppercase; }
   .section__title { margin-bottom: 50px; } }
 
+@media (max-width: 576px) { .button_lg { font-size: 14px; } }
+
 .navbar { position: fixed; left: 0; top: 0; width: 100%; background-color: #fff; z-index: 99; }
 
 .navbar-wrap { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -189,6 +191,11 @@ button:hover { cursor: pointer; }
 @media (max-width: 1199px) { .blog-list { -ms-flex-pack: distribute; justify-content: space-around; }
   .blog-list__card { margin-right: 30px; margin-left: 30px; margin-bottom: 40px; } }
 
-@media (max-width: 768px) { .blog__heading { -ms-flex-pack: distribute; justify-content: space-around; }
+@media (max-width: 768px) { .blog-list__image { height: 150px; }
+  .blog-list__text { min-height: 40px; }
+  .blog__heading { -ms-flex-pack: distribute; justify-content: space-around; }
   .blog__title { font-size: 18px; } }
+
+@media (max-width: 576px) { .blog__title { font-size: 14px; }
+  .blog__link-more { font-size: 14px; } }
 /*# sourceMappingURL=style.css.map */
