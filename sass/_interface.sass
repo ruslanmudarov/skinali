@@ -5,8 +5,16 @@ body
   +light
   c$text-color
 
+img
+  max-width: 100%
+
+button
+  &:hover
+    cursor: pointer
+
 .section
-  padding: 100px 0
+  padding-top: 100px
+  padding-bottom: 50px
   &-title
     font-size: 30px
     +bold
@@ -31,9 +39,7 @@ body
   +bold
   background-color: $primary
   color: #fff
-
-// Настройки прозрачной кнопки
-.button
+  text-decoration: none
   &-o
     border: 2px solid $primary
     padding: 17px 22px
@@ -41,6 +47,24 @@ body
     text-transform: uppercase
     +bold
     color: $primary
+    text-decoration: none
+  &_lg
+    font-size: 17px
+  &-like
+    background-color: $primary
+    color: #fff
+    height: 30px
+    width: 30px
+    padding: 10px 0  !important
+
+  &-fitting
+    background-color: #fff
+    color: $primary !important
+  &-add
+    background-color: lighten($primary, 10%)
+
+    
+    
 // Настройка чекбоксов
 .checkbox
   display: none
